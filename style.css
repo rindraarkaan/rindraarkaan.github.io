@@ -1,0 +1,63 @@
+
+		body
+		{
+			background-color: orange;
+			margin: 0;
+
+		}
+		#container
+		{
+			width: 980px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		#header
+		{
+			width: 980px;
+			height: 280px;
+			background-color: #333;
+			background-image: url("images/jjk banner.JPG");
+			background-size: 100% 100%;
+		}
+		#content
+		{
+			width: 950px;
+			height: auto;
+			background-color: #fff;
+			padding: 5px 15px 5px 15px;
+		}
+		#content h1
+		{
+			color: #ff0000;
+			border-bottom: 1px solid grey;
+		}
+		#content p
+		{
+			font-family: verdana;
+			font-size: 16px;
+			text-align: justify;
+
+		}
+		#footer
+		{
+			width: 100%;
+			height: 70px;
+			background-color: #333;
+			padding-top: 30px;
+		}
+		#footer p
+		{
+			color: #fff;
+			text-align: center;
+
+		}
+		#navigasi
+		{
+			height: 50px;
+			text-align: left;
+			background-color: #F5DEB3;
+			font-size: 26px;
+			font-style: #fff;
+			padding-top: 20px;
+		}

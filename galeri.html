@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Galeri Foto</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<style type="text/css">
+		.wrapper{
+			width: 1300px;
+			height: 490px;
+			margin: auto;
+		}
+		.galeri{
+			margin: 10px;
+			width: 300px;
+			border: 1px solid #333;
+		}
+		p{
+			text-align: center;
+			font-size: 14px;
+			font-family: arial;
+			color: #333;
+		}
+		img{
+			width: 100%;
+		}
+	</style>
+<body>
+	<div id="container">
+	<div id="header"></div>
+	<div id="navigasi">
+		<a href="index.html">Home</a> |
+		<a href="galeri.html">Gallery</a> |
+		<a href="about.html">About Us</a> |
+		<a href="contact.html">Contact Us</a> |
+	</div>
+	<div id="content">
+		<h1>Galeri Foto</h1>
+		<script>//intital tanggal dan waktu dari id
+    var dateDisplay = document.getElementById("datenow");
+    var timeDisplay = document.getElementById("timenow");
+    //fungsi
+    function refreshTime() {
+      var dateString = new Date().toLocaleString("id-ID", {timeZone: "Asia/Jakarta"}); //gettime
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth() + 1;
+      var yyyy = today.getFullYear();
+      if (dd < 10) {
+        dd = '0' + dd;
+      }
+      if (mm < 10) {
+        mm = '0' + mm;
+      }
+      var todayy = dd + '/' + mm + '/' + yyyy;
+      var formattedString = dateString.replace(",","-");
+
+      dateDisplay.innerHTML = todayy; // date
+
+      var splitarray = new Array();
+      splitarray= formattedString.split(" ");
+      var splitarraytime = new Array();
+      splitarraytime= splitarray[1].split(".");
+      timeDisplay.innerHTML = splitarraytime[0]+':'+splitarraytime[1]+':'+splitarraytime[2]; // time
+    }
+    //panggil ulang otomatis fungsi
+    setInterval(refreshTime, 1000);</script>
+	<div class="galeri">
+		<script>//intital tanggal dan waktu dari id
+    var dateDisplay = document.getElementById("datenow");
+    var timeDisplay = document.getElementById("timenow");
+    //fungsi
+    function refreshTime() {
+      var dateString = new Date().toLocaleString("id-ID", {timeZone: "Asia/Jakarta"}); //gettime
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth() + 1;
+      var yyyy = today.getFullYear();
+      if (dd < 10) {
+        dd = '0' + dd;
+      }
+      if (mm < 10) {
+        mm = '0' + mm;
+      }
+      var todayy = dd + '/' + mm + '/' + yyyy;
+      var formattedString = dateString.replace(",","-");
+
+      dateDisplay.innerHTML = todayy; // date
+
+      var splitarray = new Array();
+      splitarray= formattedString.split(" ");
+      var splitarraytime = new Array();
+      splitarraytime= splitarray[1].split(".");
+      timeDisplay.innerHTML = splitarraytime[0]+':'+splitarraytime[1]+':'+splitarraytime[2]; // time
+    }
+    //panggil ulang otomatis fungsi
+    setInterval(refreshTime, 1000);</script>
+		<img src="images/jjk 1.jpg">
+		<p>Gojo Satoru</p>
+	</div>
+
+	<div class="galeri">
+		<img src="images/jjk 2.jpg">
+		<p>Ryoumen Sukuna</p>
+	</div>
+	<div class="galeri">
+		<img src="images/jjk 3.jpg">
+		<p>Itadori Yuji & Ryoumen Sukuna</p>
+	</div>
+	<div class="galeri">
+		<img src="images/jjk 4.jpg">
+		<p>Jujutsu Tokyo Year 1 & Ryoumen Sukuna</p>
+	</div>
+	<div class="galeri">
+		<img src="images/jjk 5.jpg">
+		<p>Jujutsu Tokyo & Special Grade Curse</p>
+	</div>
+	<div class="galeri">
+		<img src="images/jjk 6.jpg">
+		<p>Fusiguro Toji</p>
+	</div>
+	<div class="galeri">
+		<img src="images/jjk 7.jpg">
+		<p>Inumaki Toge</p>
+	</div>
+	<div class="galeri">
+		<img src="images/jjk 8.jpg">
+		<p>Special Grade Jujutsu</p>
+	</div>
+	<div id="footer">
+		<p>&copy; Copyright 2023 - Rindra Arkaan Fajri Ash Shiddiq (231011701335)</p>
+	</div>
+	</div>
+</body>

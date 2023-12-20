@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DESIGN LAYOUT</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<style>
+		.gambar{
+			float: left;
+		}
+	</style>
+<body>
+	<div id="container">
+	<div id="header"></div>
+	<div id="navigasi">
+		<a href="index.html">Home</a> |
+		<a href="galeri.html">Gallery</a> |
+		<a href="about.html">About Us</a> |
+		<a href="contact.html">Contact Us</a> |
+	</div>
+	<div id="jam">
+	<div class="area-datetime">
+    <p class="date-now" id="datenow"></p>
+    <p class="time-now" id="timenow"></p>
+ 	</div>
+	<div id="content">
+		<h1>Jujutsu Kaisen</h1>
+		<img src="images/itadori.jpg" width="200" height="300" class="gambar">
+		<script>//intital tanggal dan waktu dari id
+    var dateDisplay = document.getElementById("datenow");
+    var timeDisplay = document.getElementById("timenow");
+    //fungsi
+    function refreshTime() {
+      var dateString = new Date().toLocaleString("id-ID", {timeZone: "Asia/Jakarta"}); //gettime
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth() + 1;
+      var yyyy = today.getFullYear();
+      if (dd < 10) {
+        dd = '0' + dd;
+      }
+      if (mm < 10) {
+        mm = '0' + mm;
+      }
+      var todayy = dd + '/' + mm + '/' + yyyy;
+      var formattedString = dateString.replace(",","-");
+
+      dateDisplay.innerHTML = todayy; // date
+
+      var splitarray = new Array();
+      splitarray= formattedString.split(" ");
+      var splitarraytime = new Array();
+      splitarraytime= splitarray[1].split(".");
+      timeDisplay.innerHTML = splitarraytime[0]+':'+splitarraytime[1]+':'+splitarraytime[2]; // time
+    }
+    //panggil ulang otomatis fungsi
+    setInterval(refreshTime, 1000);</script>
+		<p><b>Jujutsu Kaisen</b> (Jepang: 呪術廻戦, terj. har. "Pertarungan Sihir") adalah sebuah seri manga shōnen asal Jepang yang ditulis dan diilustrasikan oleh Gege Akutami. Manga ini dimuat berseri dalam majalah Weekly Shōnen Jump terbitan Shueisha sejak Maret 2018, dan telah diterbitkan menjadi dua puluh empat volume tankōbon per Oktober 2023.</p>
+
+		<p>Viz Media menerbitkan tiga bab pertamanya untuk program "Jump Start" mereka. Shueisha mulai merilis Jujutsu Kaisen dalam bahasa Inggris secara serentak dengan rilisnya di Jepang melalui platform Manga Plus sejak Januari 2019.</p>
+
+		<p>Manga ini telah diadaptasi menjadi seri anime yang diproduksi oleh MAPPA, dan ditayangkan sejak bulan Oktober 2020.</p>
+
+		<p><b>Yūji Itadori</b> adalah seorang siswa SMA dengan atletisitas yang tidak wajar yang tinggal di Sendai bersama kakeknya. Ia sering menghindari Klub Lari karena keengganannya pada bidang atletik, meskipun dia memiliki bakat bawaan untuk olahraga tersebut. Sebaliknya, dia memilih untuk bergabung dengan Klub Penelitian Ilmu Gaib, agar dirinya dapat bersantai dan bergaul dengan para seniornya. Setiap hari, Yūji meninggalkan sekolah pada pukul 17.00 untuk mengunjungi kakeknya di rumah sakit. Ketika dia mengunjunginya, kakeknya memberikan dua pesan kuat kepada Yūji, yaitu "selalu membantu orang" dan "mati dikelilingi orang".</p>
+
+		<p>Setelah kematian kakeknya, Yūji menafsirkan pesan-pesan tersebut sebagai satu pernyataan—bahwa setiap orang berhak mendapatkan "kematian yang layak". Ia kemudian berpapasan dengan Megumi Fushiguro, seorang penyihir (巫, Shaman) yang bertanya kepadanya tentang jimat kutukan tingkat tinggi di sekolahnya yang baru-baru ini ditemukan Yūji. Senior-seniornya di Klub Penelitian Ilmu Gaib membuka segel dari jimat tersebut dan menemukan jari yang telah membusuk, yang menarik roh Kutukan—makhluk mirip monster yang muncul melalui emosi negatif dan diperkuat dengan mengonsumsi kekuatan sihir yang ada pada penyihir atau jimat semacam itu.</p>
+
+		<p>Yūji yang tidak mampu mengalahkan roh Kutukan itu karena tidak memiliki kekuatan sihir, menelan jari tersebut untuk melindungi Megumi dan teman-temannya dan menjadi wadah dari Sukuna, roh Kutukan tingkat tinggi yang kuat. Karena sifat jahat Sukuna, semua penyihir ditugaskan untuk memusnahkannya dengan segera. Namun, meski dirasuki, Yūji masih mampu mengendalikan tubuhnya. Melihat hal tersebut, Satoru Gojō selaku guru Megumi, memutuskan untuk membawanya ke SMA Jujutsu Metropolitan Tokyo untuk mengusulkan rencana kepada atasannya—menunda hukuman mati Yūji sampai dia mengonsumsi semua jari Sukuna sampai habis, sebelum mereka membunuhnya sekali dan untuk selamanya.</p>
+	</div>
+	<div id="footer">
+		<p>&copy; Copyright 2023 - Rindra Arkaan Fajri Ash Shiddiq (231011701335)</p>
+	</div>
+	</div>
+</body>
+</html>
